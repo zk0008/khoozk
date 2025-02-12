@@ -22,15 +22,6 @@ createRoot(document.getElementById("root")!).render(
   </MantineProvider>
 );
 
-// header
-// introduction - about (share challengers and milestone)
-// experience
 // skills
-// education
 // resume
-// contact me
-// footer
 // banners - unsplash.com
-// interactive background - react-tsparticles
-
-// Aspiring full-stack developer passionate about developing efficient solutions that positively impact society.
