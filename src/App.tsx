@@ -97,7 +97,7 @@ function App() {
             <p className=" italic">React.js - TailwindCSS - TypeScript</p>
           </div>
           <p className=" w-1/2">
-            A web application with personality quiz for personalized vourse
+            A web application with personality quiz for personalized course
             recommendations
           </p>
           <div className=" flex justify-between mt-4">
