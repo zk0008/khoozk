@@ -52,7 +52,7 @@ function App() {
           <div className=" w-full">
             <div className=" flex justify-between">
               <p className=" font-semibold">Nanyang Technological University</p>
-              <p className=" ">2023 - 2027</p>
+              <p className=" italic">2023 - 2027</p>
             </div>
             <p className=" ">Bachelor of Computing in Computer Science</p>
           </div>
@@ -67,7 +67,7 @@ function App() {
           <div className=" w-full">
             <div className=" flex justify-between">
               <p className=" font-semibold">Nanyang Polytechnic</p>
-              <p className=" ">2019 - 2021</p>
+              <p className=" italic">2019 - 2021</p>
             </div>
             <p className=" ">Diploma in Electronic Systems</p>
             <p className=" italic">Specialized in Smart Connected Systems</p>
@@ -79,14 +79,58 @@ function App() {
         <div className=" text-lg lg:text-xl container mb-4">
           <div className=" flex justify-between">
             <p className=" font-semibold ">NK Robotics</p>
-            <p className=" ">May 2024 - Aug 2024</p>
+            <p className=" italic">May 2024 - Aug 2024</p>
           </div>
           <p>Part-Time Coding Instructor</p>
           <div className=" flex justify-between mt-4">
             <p className=" font-semibold ">Meiban Micro Pte Litd</p>
-            <p className=" ">Jun 2020 - Aug 2020</p>
+            <p className=" italic">Jun 2020 - Aug 2020</p>
           </div>
           <p>Internship</p>
+        </div>
+        <h2 className="text-2xl lg:text-3xl font-bold my-4 text-gray-800">
+          Projects
+        </h2>
+        <div className=" text-lg lg:text-xl container mb-4">
+          <div className=" flex justify-between">
+            <p className=" font-semibold ">PolyQuest</p>
+            <p className=" italic">React.js - TailwindCSS - TypeScript</p>
+          </div>
+          <p className=" w-1/2">
+            A web application with personality quiz for personalized vourse
+            recommendations
+          </p>
+          <div className=" flex justify-between mt-4">
+            <p className=" font-semibold ">
+              Hospital Management System Application
+            </p>
+            <p className=" italic">Java - OOP</p>
+          </div>
+          <p className=" w-1/2">
+            A management system application using design principles including
+            Model-View-Controller and SOLID
+          </p>
+          <div className=" flex justify-between mt-4">
+            <p className=" font-semibold ">
+              Contact Tracing Mobile Application
+            </p>
+            <p className=" italic">
+              Java - Node.js - Firebase - Google Maps API
+            </p>
+          </div>
+          <p className=" w-1/2">
+            A location-tracking mobile application utilizing Cloud Firestore and
+            Google Map services
+          </p>
+        </div>
+        <h2 className="text-2xl lg:text-3xl font-bold my-4 text-gray-800">
+          Programming Languages
+        </h2>
+        <div className=" text-lg lg:text-xl container mb-4">
+          <p className=" italic">
+            C - C++ - Java - JavaScript - HTML - CSS - React.js - Python -
+            Assembly Language
+          </p>
         </div>
       </div>
     </div>
