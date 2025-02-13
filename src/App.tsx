@@ -1,5 +1,7 @@
 import { Mail } from "lucide-react";
 import { Linkedin } from "lucide-react";
+import ntulogo from "./assets/NTULogo.svg.png";
+import nyplogo from "./assets/NYPLogo.jpeg";
 
 function App() {
   return (
@@ -44,10 +46,7 @@ function App() {
         </h2>
         <div className="text-base lg:text-lg inline-flex container h-20 mb-4">
           <div className=" w-2/12">
-            <img
-              src="./src/assets/NTULogo.svg.png"
-              className=" size-20 align-middle"
-            />
+            <img src={ntulogo} className=" size-20 align-middle" />
           </div>
           <div className=" w-full">
             <div className=" flex justify-between">
@@ -59,10 +58,7 @@ function App() {
         </div>
         <div className="text-base lg:text-lg inline-flex container h-20">
           <div className=" w-2/12">
-            <img
-              src="./src/assets/NYPLogo.jpeg"
-              className=" size-20 align-middle"
-            />
+            <img src={nyplogo} className=" size-20 align-middle" />
           </div>
           <div className=" w-full">
             <div className=" flex justify-between">
