@@ -2,10 +2,16 @@
 
 Personal website
 
-## Run
+## Run on localhost
 
 ```js
 npm run dev
+```
+
+## Run on Github
+
+```js
+npm run deploy
 ```
 
 ## License
