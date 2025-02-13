@@ -45,7 +45,7 @@ function App() {
         <div className="text-base lg:text-lg inline-flex container h-20 mb-4">
           <div className=" w-2/12">
             <img
-              src="/src/assets/NTULogo.svg.png"
+              src="./src/assets/NTULogo.svg.png"
               className=" size-20 align-middle"
             />
           </div>
@@ -60,7 +60,7 @@ function App() {
         <div className="text-base lg:text-lg inline-flex container h-20">
           <div className=" w-2/12">
             <img
-              src="/src/assets/NYPLogo.jpeg"
+              src="./src/assets/NYPLogo.jpeg"
               className=" size-20 align-middle"
             />
           </div>

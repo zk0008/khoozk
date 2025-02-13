@@ -21,7 +21,7 @@ const Header: React.FC = () => {
         : "bg-[rgb(127,127,127)]"
     }`}
     >
-      <img src="/kzklogogrey.png" alt="My Logo" className="h-12 w-auto" />
+      <img src="./kzklogogrey.png" alt="My Logo" className="h-12 w-auto" />
       <h1 className="text-4xl font-raleway font-bold text-gray-800">
         Portfolio
       </h1>
