@@ -21,7 +21,3 @@ createRoot(document.getElementById("root")!).render(
     </StrictMode>
   </MantineProvider>
 );
-
-// skills
-// resume
-// banners - unsplash.com
