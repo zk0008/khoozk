@@ -31,13 +31,13 @@ function App() {
               href="mailto:zekangkhoo@gmail.com"
               className=" inline-flex items-center ml-4 align-middle"
             >
-              <Mail size={23} color="#0645AD" />
+              <Mail size={23} className=" text-gray-800" />
             </a>
             <a
               href="https://www.linkedin.com/in/ze-kang-khoo-"
               className=" inline-flex items-center ml-4 align-middle"
             >
-              <Linkedin size={23} color="#0645AD" />
+              <Linkedin size={23} className="text-gray-800" />
             </a>
           </p>
         </div>

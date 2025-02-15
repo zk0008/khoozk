@@ -1,6 +1,6 @@
-# khoozk.com
+# khoozk
 
-Personal website
+Website: zk0008.github.io/khoozk/
 
 ## Run on localhost
 
