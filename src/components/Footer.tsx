@@ -9,19 +9,28 @@ const Footer: React.FC = () => (
       href="https://www.github.com/zk0008"
       className=" inline-flex items-center mx-8 align-middle"
     >
-      <Github size={23} className=" text-gray-800" />
+      <Github
+        size={23}
+        className=" text-gray-800 transform transition-all hover:-translate-y-0.5"
+      />
     </a>
     <a
       href="mailto:zekangkhoo@gmail.com"
       className=" inline-flex items-center mx-8 align-middle"
     >
-      <Mail size={23} className=" text-gray-800" />
+      <Mail
+        size={23}
+        className=" text-gray-800 transform transition-all hover:-translate-y-0.5"
+      />
     </a>
     <a
       href="https://www.linkedin.com/in/ze-kang-khoo-"
       className=" inline-flex items-center mx-8 align-middle"
     >
-      <Linkedin size={23} className="text-gray-800" />
+      <Linkedin
+        size={23}
+        className="text-gray-800 transform transition-all hover:-translate-y-0.5"
+      />
     </a>
   </footer>
 );

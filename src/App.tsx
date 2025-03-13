@@ -31,13 +31,19 @@ function App() {
               href="mailto:zekangkhoo@gmail.com"
               className=" inline-flex items-center ml-4 align-middle"
             >
-              <Mail size={23} className=" text-gray-800" />
+              <Mail
+                size={23}
+                className=" text-gray-800 transform transition-all hover:-translate-y-0.5"
+              />
             </a>
             <a
               href="https://www.linkedin.com/in/ze-kang-khoo-"
               className=" inline-flex items-center ml-4 align-middle"
             >
-              <Linkedin size={23} className="text-gray-800" />
+              <Linkedin
+                size={23}
+                className="text-gray-800 transform transition-all hover:-translate-y-0.5"
+              />
             </a>
           </p>
         </div>
