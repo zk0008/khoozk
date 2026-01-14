@@ -13,7 +13,7 @@ function App() {
         <h2 className="text-2xl lg:text-3xl font-bold mt-5 mb-4 text-gray-800">
           About
         </h2>
-        <div className=" text-lg lg:text-xl space-y-2">
+        <div className="text-lg lg:text-xl space-y-2">
           <p>
             NTU Computer Science student and aspiring full-stack software engineer, 
             passionate about developing efficient solutions that can positively impact society.
