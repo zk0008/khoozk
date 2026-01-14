@@ -15,25 +15,28 @@ function App() {
         </h2>
         <div className=" text-lg lg:text-xl space-y-2">
           <p>
-            NTU Computer Science student and aspiring full-stack developer
-            passionate about developing efficient solutions that can positively
-            impact society.
+            NTU Computer Science student and aspiring full-stack software engineer, 
+            passionate about developing efficient solutions that can positively impact society.
           </p>
           <p>
-            My expertise includes front-end development with React.js and
-            TailwindCSS, along with proficiency in other various programming
-            languages.
+            My expertise includes full-stack development, with experience across frontend 
+            and backend technologies using React.js, Node.js, and ASP.NET MVC, working within 
+            an Agile development environment. I am also proficient in development with various 
+            CMS platforms using modern frameworks and APIs. Through hands-on project and 
+            internship experience, I have contributed to live web applications and supported 
+            UAT and production deployments. Additionally, I have a strong foundation in multiple 
+            programming languages and am comfortable learning new technologies as needed.
           </p>
           <p>
-            I'm actively looking for opportunities to enhance my skill set. If
-            you have any suitable openings, contact me here
+            I'm actively looking for opportunities to enhance my skill set and grow as a software engineer. 
+            If you have any suitable openings, feel free to contact me here
             <a
               href="mailto:zekangkhoo@gmail.com"
               className=" inline-flex items-center ml-4 align-middle"
             >
               <Mail
                 size={23}
-                className=" text-gray-800 transform transition-all hover:-translate-y-0.5"
+                className="text-gray-800 transform transition-all hover:-translate-y-0.5"
               />
             </a>
             <a
@@ -80,12 +83,17 @@ function App() {
         </h2>
         <div className=" text-lg lg:text-xl container mb-4">
           <div className=" flex justify-between">
+            <p className=" font-semibold ">Amber Creative</p>
+            <p className=" italic">May 2025 - Dec 2025</p>
+          </div>
+          <p>Web Developer Internship</p>
+          <div className=" flex justify-between mt-4">
             <p className=" font-semibold ">NK Robotics</p>
             <p className=" italic">May 2024 - Aug 2024</p>
           </div>
           <p>Part-Time Coding Instructor</p>
           <div className=" flex justify-between mt-4">
-            <p className=" font-semibold ">Meiban Micro Pte Litd</p>
+            <p className=" font-semibold ">Meiban Micro Pte Ltd</p>
             <p className=" italic">Jun 2020 - Aug 2020</p>
           </div>
           <p>Internship</p>
@@ -130,8 +138,7 @@ function App() {
         </h2>
         <div className=" text-lg lg:text-xl container mb-4">
           <p className=" italic">
-            C - C++ - Java - JavaScript - HTML - CSS - React.js - Python -
-            Assembly Language
+            C - C++ - C# - Razor (CSHTML) - Java - JavaScript - HTML - CSS - React.js - Node.js - Python - Assembly Language - Linux
           </p>
         </div>
       </div>
