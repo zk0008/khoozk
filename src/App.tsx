@@ -1,148 +1,35 @@
-import { Mail } from "lucide-react";
-import { Linkedin } from "lucide-react";
-import ntulogo from "./assets/NTULogo.svg.png";
-import nyplogo from "./assets/NYPLogo.jpeg";
+import { useState } from "react";
+import Contact from "./components/Contact";
+import Education from "./components/Education";
+import Experience from "./components/Experience";
+import Hero from "./components/Hero";
+import Nav from "./components/Nav";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import { useRevealOnScroll } from "./hooks/useRevealOnScroll";
 
 function App() {
+  const [huntTime, setHuntTime] = useState<number | null>(null);
+  useRevealOnScroll();
+
   return (
-    <div className="flex justify-center">
-      <div className="text-white mt-12 container max-w-[800px] font-raleway">
-        <h1 className="text-3xl lg:text-4xl font-extrabold my-4">
-          Hi, I'm Ze Kang
-        </h1>
-        <h2 className="text-2xl lg:text-3xl font-bold mt-5 mb-4 text-gray-800">
-          About
-        </h2>
-        <div className="text-lg lg:text-xl space-y-2">
-          <p>
-            NTU Computer Science student and aspiring full-stack software engineer, 
-            passionate about developing efficient solutions that can positively impact society.
-          </p>
-          <p>
-            My expertise includes full-stack development, with experience across frontend 
-            and backend technologies using React.js, Node.js, and ASP.NET MVC, working within 
-            an Agile development environment. I am also proficient in development with various 
-            CMS platforms using modern frameworks and APIs. Through hands-on project and 
-            internship experience, I have contributed to live web applications and supported 
-            UAT and production deployments. Additionally, I have a strong foundation in multiple 
-            programming languages and am comfortable learning new technologies as needed.
-          </p>
-          <p>
-            I'm actively looking for opportunities to enhance my skill set and grow as a software engineer. 
-            If you have any suitable openings, feel free to contact me here
-            <a
-              href="mailto:zekangkhoo@gmail.com"
-              className=" inline-flex items-center ml-4 align-middle"
-            >
-              <Mail
-                size={23}
-                className="text-gray-800 transform transition-all hover:-translate-y-0.5"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/ze-kang-khoo-"
-              className=" inline-flex items-center ml-4 align-middle"
-            >
-              <Linkedin
-                size={23}
-                className="text-gray-800 transform transition-all hover:-translate-y-0.5"
-              />
-            </a>
-          </p>
-        </div>
-        <h2 className="text-2xl lg:text-3xl font-bold my-4 text-gray-800">
-          Education
-        </h2>
-        <div className="text-base lg:text-lg inline-flex container h-20 mb-4">
-          <div className=" w-2/12">
-            <img src={ntulogo} className=" size-20 align-middle" />
-          </div>
-          <div className=" w-full">
-            <div className=" flex justify-between">
-              <p className=" font-semibold">Nanyang Technological University</p>
-              <p className=" italic">2023 - 2027</p>
-            </div>
-            <p className=" ">Bachelor of Computing in Computer Science</p>
-          </div>
-        </div>
-        <div className="text-base lg:text-lg inline-flex container h-20">
-          <div className=" w-2/12">
-            <img src={nyplogo} className=" size-20 align-middle" />
-          </div>
-          <div className=" w-full">
-            <div className=" flex justify-between">
-              <p className=" font-semibold">Nanyang Polytechnic</p>
-              <p className=" italic">2019 - 2021</p>
-            </div>
-            <p className=" ">Diploma in Electronic Systems</p>
-            <p className=" italic">Specialized in Smart Connected Systems</p>
-          </div>
-        </div>
-        <h2 className="text-2xl lg:text-3xl font-bold my-4 text-gray-800">
-          Experience
-        </h2>
-        <div className=" text-lg lg:text-xl container mb-4">
-          <div className=" flex justify-between">
-            <p className=" font-semibold ">Amber Creative</p>
-            <p className=" italic">May 2025 - Dec 2025</p>
-          </div>
-          <p>Web Developer Internship</p>
-          <div className=" flex justify-between mt-4">
-            <p className=" font-semibold ">NK Robotics</p>
-            <p className=" italic">May 2024 - Aug 2024</p>
-          </div>
-          <p>Part-Time Coding Instructor</p>
-          <div className=" flex justify-between mt-4">
-            <p className=" font-semibold ">Meiban Micro Pte Ltd</p>
-            <p className=" italic">Jun 2020 - Aug 2020</p>
-          </div>
-          <p>Internship</p>
-        </div>
-        <h2 className="text-2xl lg:text-3xl font-bold my-4 text-gray-800">
-          Projects
-        </h2>
-        <div className=" text-lg lg:text-xl container mb-4">
-          <div className=" flex justify-between">
-            <p className=" font-semibold ">PolyQuest</p>
-            <p className=" italic">React.js - TailwindCSS - TypeScript</p>
-          </div>
-          <p className=" w-1/2">
-            A web application with personality quiz for personalized course
-            recommendations
-          </p>
-          <div className=" flex justify-between mt-4">
-            <p className=" font-semibold ">
-              Hospital Management System Application
-            </p>
-            <p className=" italic">Java - OOP</p>
-          </div>
-          <p className=" w-1/2">
-            A management system application using design principles including
-            Model-View-Controller and SOLID
-          </p>
-          <div className=" flex justify-between mt-4">
-            <p className=" font-semibold ">
-              Contact Tracing Mobile Application
-            </p>
-            <p className=" italic">
-              Java - Node.js - Firebase - Google Maps API
-            </p>
-          </div>
-          <p className=" w-1/2">
-            A location-tracking mobile application utilizing Cloud Firestore and
-            Google Map services
-          </p>
-        </div>
-        <h2 className="text-2xl lg:text-3xl font-bold my-4 text-gray-800">
-          Programming Languages
-        </h2>
-        <div className=" text-lg lg:text-xl container mb-4">
-          <p className=" italic">
-            C - C++ - C# - Razor (CSHTML) - Java - JavaScript - HTML - CSS - React.js - Node.js - Python - Assembly Language - Linux
-          </p>
-        </div>
-      </div>
-    </div>
+    <>
+      <a
+        href="#experience"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-ink focus:px-4 focus:py-2 focus:text-paper"
+      >
+        Skip to content
+      </a>
+      <Nav />
+      <main>
+        <Hero onWin={setHuntTime} />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Education />
+      </main>
+      <Contact huntTime={huntTime} />
+    </>
   );
 }
 
