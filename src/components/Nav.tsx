@@ -2,6 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { navLinks } from "../data/resume";
 
+// px from the top of the screen: the 64px nav bar plus a little room. A section that is
+// jumped to lands with its top 32px from the top, comfortably above this line.
+const ACTIVE_LINE = 112;
+
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState<string | null>(null);
@@ -15,19 +19,38 @@ const Nav = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // highlight the link for whichever section sits in the middle of the screen
+  // Highlight the last section whose top has scrolled up to just under the nav bar.
+  // Measuring from the top (not the middle of the screen) keeps short sections like
+  // Skills highlighted after a jump, instead of the taller section below them.
   useEffect(() => {
-    const io = new IntersectionObserver(
-      (entries) => {
-        for (const e of entries) if (e.isIntersecting) setActive(e.target.id);
-      },
-      { rootMargin: "-45% 0px -50% 0px" }
-    );
-    for (const id of ["top", ...navLinks.map((l) => l.id)]) {
-      const el = document.getElementById(id);
-      if (el) io.observe(el);
-    }
-    return () => io.disconnect();
+    const ids = ["top", ...navLinks.map((l) => l.id)];
+    let frame = 0;
+
+    const update = () => {
+      frame = 0;
+      let current = ids[0];
+      for (const id of ids) {
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top <= ACTIVE_LINE) current = id;
+      }
+      // at the very bottom of the page the last section wins
+      const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+      if (atBottom) current = ids[ids.length - 1];
+      setActive(current);
+    };
+
+    const schedule = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+
+    update();
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", schedule);
+      window.removeEventListener("resize", schedule);
+    };
   }, []);
 
   // Escape closes the mobile menu and hands focus back to its button
